@@ -1,0 +1,34 @@
+.ui-tabs { 
+	width: 55em;
+}
+
+.ui-tabs .ui-tabs-nav { 
+	padding: .1em .1em .2em .2em; 
+	float: left; 
+	width: 12em;
+}
+
+.ui-tabs .ui-tabs-nav li { 
+	clear: left; 
+	width: 100%; 
+}
+
+.ui-tabs .ui-tabs-nav li a { 
+	display: block; 
+	text-decoration: none;
+	color: #000000;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { 
+	background-color: #cccccc;
+}
+
+.ui-tabs .ui-tabs-panel { 
+	padding: 1em; 
+	float: right; 
+	width: 40em;
+}
+
+.ui-tabs .ui-tabs-hide { 
+	display: none; 
+}

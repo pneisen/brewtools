@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Brewing Tools</title>
+		<script src="http://www.google.com/jsapi"></script>
+		<script>
+			// Load jquery via google.
+			google.load("jquery", "1.3.2");
+			google.load("jqueryui", "1.7.2");
+		</script>
+		<script src="script/brewtools.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+	</head>
+	<body>
+		<h1>Brewing Tools</h1>
+		<div id="tabs">
+		    <ul>
+			<li><a href="#weight"><span>Weight Conversion</span></a></li>
+			<li><a href="#volume"><span>Volume Conversion</span></a></li>
+			<li><a href="#specificGravity"><span>Specific Gravity Conversion</span></a></li>
+			<li><a href="#temperature"><span>Temperature Conversion</span></a></li>
+			<li><a href="#hydrometer"><span>Hydrometer Adjustment</span></a></li>
+		    </ul>
+		    <div id="weight">
+			<form action="#" METHOD=POST>
+				<b>English Weight</b><br />
+				ounces: <input id="weight" name="ounces" /> <br />
+				pounds: <input id="weight" name="pounds" /><br />
+				<br />
+				<b>Metric Weight</b><br />
+				grams: <input id="weight" name="grams" /><br />
+				kilograms: <input id="weight" name="kilograms" /><br />
+			</form>
+			<a id="reset" href="#">Reset</a>
+		    </div>
+		    <div id="volume">
+			<form action="#" METHOD=POST>
+				<b>U.S. Volume</b><br />
+				fluid ounces: <input id="volume" name="fluidounces" /> <br />
+				cups: <input id="volume" name="cups" /><br />
+				12 ounce bottles: <input id="volume" name="12oz" /><br />
+				pints: <input id="volume" name="pints" /><br />
+				22 ounce bottles: <input id="volume" name="22oz" /><br />
+				quarts: <input id="volume" name="quarts" /><br />
+				gallons: <input id="volume" name="gallons" /><br />
+				barrels: <input id="volume" name="barrels" /><br />
+				<br />
+				<b>U.K. Imperial Volume</b><br />
+				imperial fluid ounces: <input id="volume" name="impfluidounces" /><br />
+				imperial pints: <input id="volume" name="imppints" /><br />
+				imperial quarts: <input id="volume" name="impquarts" /><br />
+				imperial gallons: <input id="volume" name="impgallons" /><br />
+				imperial barrels: <input id="volume" name="impbarrels" /><br />
+				<br />
+				<b>Metric Volume</b><br />
+				milliliters: <input id="volume" name="milliliters" /><br />
+				liters: <input id="volume" name="liters" /><br />
+			</form>
+			<a id="reset" href="#">Reset</a>
+		    </div>
+		    <div id="specificGravity">
+			<form action="#" METHOD=POST>
+				<b>Specific Gravity</b><br />
+				specific gravity: <input id="specificGravity" name="sg" /> <br />
+				degrees plato: <input id="specificGravity" name="plato" /><br />
+			</form>
+			<a id="reset" href="#">Reset</a>
+		    </div>
+		    <div id="temperature">
+			<form action="#" METHOD=POST>
+				<b>Temperature</b><br />
+				degrees fahrenheit: <input id="temperature" name="fahrenheit" /> <br />
+				degrees celsius: <input id="temperature" name="celsius" /><br />
+			</form>
+			<a id="reset" href="#">Reset</a>
+		    </div>
+		    <div id="hydrometer">
+			<form action="#" METHOD=POST>
+				<b>Hydrometer Adjust</b><br />
+				measured specific gravity: <input id="hydrometer" name="measuredsg" /> <br />
+				sample temperature: <input id="hydrometer" name="temperature" /><br />
+				hydrometer calibration temperature: <input id="hydrometer" name="caltemperature" /><br />
+				corrected specific gravity: <input id="hydrometer" name="correctedsg" disabled=true /><br />
+			</form>
+			<a id="reset" href="#">Reset</a>
+		    </div>
+		</div>
+	</body>
+</html>
